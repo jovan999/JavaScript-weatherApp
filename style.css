@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 970px;
+  height: 610px;
+  border-radius: 60px;
+  background-size: cover;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  margin: 50px auto;
+  transition: all 3s;
+}
+
+.city {
+  font-size: 45px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.temp {
+  padding-top: 40px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.firstLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.lastLine {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 90px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+.time{
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 900px) {
+  .city {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .temp {
+    font-size: 85px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .date {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .firstLine {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .description {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .block,
+  .p {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .block,
+  .p {
+    display: block;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header input {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header input {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header input {
+    width: 80%;
+    font-size: 28px;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .city {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .temp {
+    font-size: 60px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .firstLine, .feelsLike, .description, .date {
+    margin-top: 0;
+  }
+}
+
+.match-list{
+background-color: rgba(0, 0, 0, 0.507);
+}
+
+.match-list h3{
+  color: white;
+  text-decoration: none;
+}
+
+.errMsg{
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}
+.header input {
+  width: 400px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  border-radius: 0 16px;
+  margin-top: 30px;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.error {
+  font-size: 35px;
+  color: red;
+  font-weight: bold;
+  background-color: black;
+}
