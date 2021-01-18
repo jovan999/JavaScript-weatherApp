@@ -3,9 +3,13 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
-  width: 970px;
-  height: 610px;
+  width: 80%;
+  height: auto;
   border-radius: 60px;
   background-size: cover;
   text-align: center;
@@ -50,120 +54,17 @@
   font-weight: bolder;
 }
 
-
-.time{
-  margin-top: 7px;
-}
-
-@media only screen and (max-width: 900px) {
-  .city {
-    font-size: 44px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .temp {
-    font-size: 85px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .date {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .firstLine {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .description {
-    padding-right: 50px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .block,
-  .p {
-    font-size: 20px;
-    padding-left: 50px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .block,
-  .p {
-    display: block;
-    padding: 0;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  header input {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  header input {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  header input {
-    width: 80%;
-    font-size: 28px;
-  }
-}
-
-
-@media only screen and (max-width: 425px) {
-  .city {
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .temp {
-    font-size: 60px;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .firstLine, .feelsLike, .description, .date {
-    margin-top: 0;
-  }
-}
-
-.match-list{
-background-color: rgba(0, 0, 0, 0.507);
-}
-
-.match-list h3{
-  color: white;
-  text-decoration: none;
-}
-
-.errMsg{
-  background-color: black;
-  color: red;
-  font-weight: bold;
-}
 .header input {
   width: 400px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(160, 152, 152, 0.575);
   text-align: center;
   font-size: 32px;
   border: none;
   outline: none;
-  border-radius: 0 16px;
-  margin-top: 30px;
+  border-radius: 16px;
+  border: 2px solid black;
+  margin-top: 40px;
 }
 
 input:focus {
@@ -174,4 +75,35 @@ input:focus {
   color: red;
   font-weight: bold;
   background-color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header input {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .block, .firstLine {
+    display: block;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .lastLine {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .city {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    border-radius: 20px 20px 60px 60px;
+  }
 }
