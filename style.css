@@ -83,6 +83,18 @@ input:focus {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media only screen and (max-width: 730px) {
   .block, .firstLine {
     display: block;
