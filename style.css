@@ -67,6 +67,10 @@ body {
   margin-top: 40px;
 }
 
+input::placeholder{
+  color: black;
+}
+
 input:focus {
   background-color: rgba(255, 255, 255, 0.8);
 }
