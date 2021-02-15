@@ -8,8 +8,7 @@ body {
 }
 
 .container {
-  width: 80%;
-  height: auto;
+  width: 70%;
   border-radius: 60px;
   background-size: cover;
   text-align: center;
@@ -30,20 +29,19 @@ body {
   font-weight: bold;
 }
 
-.firstLine {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: 30px;
   font-weight: bold;
   padding-top: 50px;
 }
 
+.firstLine {
+  font-size: 30px;
+}
+
 .block {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   font-size: 25px;
-  font-weight: bold;
-  padding-top: 50px;
 }
 
 .lastLine {
@@ -64,10 +62,13 @@ body {
   outline: none;
   border-radius: 16px;
   border: 2px solid black;
-  margin-top: 40px;
 }
 
-input::placeholder{
+.input-center {
+  text-align: center;
+}
+
+input::placeholder {
   color: black;
 }
 
@@ -100,7 +101,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 730px) {
-  .block, .firstLine {
+  .grid {
     display: block;
     padding-top: 30px;
   }
@@ -120,6 +121,18 @@ input:focus {
 
 @media only screen and (max-width: 730px) {
   .container {
-    border-radius: 20px 20px 60px 60px;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .temp {
+    padding: 20px;
   }
 }
