@@ -61,46 +61,46 @@ function displayAll(data) {
 }
 
 // -----------Background Images Function --------------//
-function displayBackgroung(data) {
-  if (data.current.condition.text.includes("snow")) {
-    container.style = "background-image:url(image/snow-min.jpg)";
-  }
+// function displayBackgroung(data) {
+//   if (data.current.condition.text.includes("snow")) {
+//     container.style = "background-image:url(image/snow-min.jpg)";
+//   }
 
-  if (data.current.condition.text.includes("rain")) {
-    container.style = "background-image:url(image/rain-min.jpg); color:white";
-  }
-  if (data.current.condition.text.includes("Clear")) {
-    container.style = "background-image:url(image/clear-min.jpg)";
-  }
+//   if (data.current.condition.text.includes("rain")) {
+//     container.style = "background-image:url(image/rain-min.jpg); color:white";
+//   }
+//   if (data.current.condition.text.includes("Clear")) {
+//     container.style = "background-image:url(image/clear-min.jpg)";
+//   }
 
-  if (data.current.condition.text.includes("Sunny")) {
-    container.style = "background-image:url(image/sunny-min.jpg)";
-  }
+//   if (data.current.condition.text.includes("Sunny")) {
+//     container.style = "background-image:url(image/sunny-min.jpg)";
+//   }
 
-  if (data.current.condition.text.includes("Overcast")) {
-    container.style = "background-image:url(image/overcast-min.jpg)";
-  }
+//   if (data.current.condition.text.includes("Overcast")) {
+//     container.style = "background-image:url(image/overcast-min.jpg)";
+//   }
 
-  if (data.current.condition.text.includes("cloudy")) {
-    container.style = "background-image:url(image/cloud-min.jpeg)";
-  }
+//   if (data.current.condition.text.includes("cloudy")) {
+//     container.style = "background-image:url(image/cloud-min.jpeg)";
+//   }
 
-  if (data.current.condition.text.includes("drizzle")) {
-    container.style = "background-image:url(image/drizle-min.jpeg)";
-  }
+//   if (data.current.condition.text.includes("drizzle")) {
+//     container.style = "background-image:url(image/drizle-min.jpeg)";
+//   }
 
-  if (data.current.condition.text.includes("mist")) {
-    container.style = "background-image:url(image/mist-min.jpg)";
-  }
+//   if (data.current.condition.text.includes("mist")) {
+//     container.style = "background-image:url(image/mist-min.jpg)";
+//   }
 
-  if (data.current.is_day === 0) {
-    body.style = "background-image: url(image/night.png)";
-  }
+//   if (data.current.is_day === 0) {
+//     body.style = "background-image: url(image/night.png)";
+//   }
 
-  if (data.current.is_day === 1) {
-    body.style = "background-image: url(image/day.png)";
-  }
-}
+//   if (data.current.is_day === 1) {
+//     body.style = "background-image: url(image/day.png)";
+//   }
+// }
 
 // ---------- First API CALL ON LOAD PAGE (MY LOCATION) --------------//
 function getWeather(latitude, longitude) {
@@ -116,7 +116,7 @@ function getWeather(latitude, longitude) {
       displayAll(data);
       //---------- Background Image ----------//
 
-      displayBackgroung(data);
+//       displayBackgroung(data);
     })
     .catch(err => {
       renderError(`${err.message}... Try again...`);
@@ -140,7 +140,7 @@ function getResults(query) {
       //---------- All data ----------//
       displayAll(data);
       //---------- Background Image ----------//
-      displayBackgroung(data);
+//       displayBackgroung(data);
     })
     .catch(err => {
       renderError(`${err.message}... Try again...`);
